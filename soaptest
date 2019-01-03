@@ -1,0 +1,25 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://ibk.com/intf/Productos/CoreBancario/CanjePuntos/V1.0" xmlns:v2="http://ibk.com/ents/SOI/MessageFormat/V2.1">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-D1BC9C5867FC37E39815465310590771">
+            <wsse:Username>HBK_U100</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">Bancoripley@2018</wsse:Password>
+            <wsse:Nonce EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">KpJeq9cK7OjFGM5Dr8DDuw==</wsse:Nonce>
+            <wsu:Created>2019-01-03T15:57:39.068Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <v2:requestHeader>
+         <!--Optional:-->
+         <systemId>?</systemId>
+      </v2:requestHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <v1:canjearPuntos>
+         <RefCanjearPuntos>
+            <tipoServicio>?</tipoServicio>
+            <tipoOperacion>?</tipoOperacion>
+            <codigoCliente>?</codigoCliente>
+         </RefCanjearPuntos>
+      </v1:canjearPuntos>
+   </soapenv:Body>
+</soapenv:Envelope>
